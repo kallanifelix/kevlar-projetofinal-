@@ -313,9 +313,7 @@
 
     .hoverzoom {
         position: relative;
-        width: 200px;
         overflow: hidden;
-        float:left;
         margin-left: 80px;
         margin-top:50px;
     }
@@ -394,12 +392,6 @@ footer {
 footer p{
    text-align:center !important;
 }
-@media screen and (min-width: 
-1024px) {
- #main { min-width: 1000px; }
-}
-
-@media screen and (max-width:)
 
 
 /**/
@@ -443,17 +435,44 @@ nav-collapse ul {
   user-select: none;
 }
 
-@media screen and (min-width: 40em) {
-  .js .nav-collapse {
-    position: relative;
-  }
-  .js .nav-collapse.closed {
-    max-height: none;
-  }
-  .nav-toggle {
-    display: none;
-  }
+
+@media screen and (min-width: 840px) 
+{
+    #main { min-width: 1000px; }
+    .hoverzoom
+    {
+        width: 250px;
+        float: left;
+    }
 }
+
+@media screen and (max-width: 840px) 
+{
+    .hoverzoom 
+    {
+        width: 200px;
+        float: none;
+    }
+}
+
+@media screen and (min-width: 640px) 
+{
+    .js .nav-collapse 
+    {
+        position: relative;
+    }
+    .js .nav-collapse.closed 
+    {
+        max-height: none;
+    }
+    .nav-toggle 
+    {
+        display: none;
+    }
+}
+
+
+
 /*FORM CADASTRO/////////////////////*/
 input[type=text],[type=email] {
     width: 80%;
