@@ -1,0 +1,616 @@
+* {
+	margin: 0 auto;
+	font-family: sans-serif;
+	font-weight: 400;
+	line-height: 26px;
+	
+}
+
+
+/* --> *HEADER* <-- */
+
+    header{
+        opacity: 0.9;
+        min-height: 60px;
+        height: auto;
+        width: 100%;
+        background-color: black;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        font-size: 1em;
+        z-index: 3;
+        transition: all .3s;
+}
+
+.textoheader{
+    margin-left:30px;
+}
+
+    .logoheader{
+        font-family:bangers;
+        margin-left: 5px;
+		
+    }
+
+    .carrinho{
+        width: 45px;
+        height: 45px;
+        float: right;
+        margin-right: 30px;
+        margin-left: -10px;
+    }
+
+    .entrar{
+        width:50px;
+        height: 50px;
+        float: right;
+        margin-right: 40px;
+    }
+    /* BUSCA */
+    #divbusca{
+      background-color:#4d4d4d;
+      border:solid 2px #0d0d0d;
+      border-radius:10px;
+      width:400px;
+      height:32px;
+      margin-top:10px;
+      margin-right:10px;
+	  
+    }
+
+
+	.icon{
+		width:35px;
+		height:35px;
+		margin-top:-3px;
+	}
+		
+   
+
+    .aq{
+    margin-right: 30px;
+    }
+
+    #txtBusca{
+      float:left;
+      background-color:transparent;
+      padding-left:5px; 
+      font-size:18px;
+      border:none;
+      height:20px;
+      width:315px;
+
+    }
+
+    #btnBusca{
+      border:none;
+      float:left;
+      height:32px;
+      border-radius:0 7px 7px 0;
+      width:70px;
+      font-weight:bold;
+      background:#a6ff4d;
+    }
+
+    #divBusca button{
+        float:right;
+
+    }
+
+/* --> *MENU & EFEITOS* <-- */
+
+    main {
+        padding-top: 100px;
+
+    }
+
+    .menu{
+        color: #ffffff;
+        text-align:center;
+        position:fixed;
+        width:100%;
+        top:60px;
+        overflow: hidden;
+        background-image:url(a.png);
+        font-family: Arial;	
+        padding-left:5px;
+        height:55px;
+        z-index:1;
+    }
+
+    .menu a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+
+
+/*cadastro*/
+.cadas{
+    margin-right: 10px;
+	text-decoration:none;
+	color:white;
+	font-family:arial;
+    
+    
+    
+}
+    /* EFEITO CASCATA  */
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+        font-size: 16px;    
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+    }
+
+    .menu a:hover, .dropdown:hover .dropbtn {
+        background-color: #77b300;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: fixed;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+/* --> *SLIDE* <-- */
+    .slideshow-container {
+      position: relative;
+      margin-top: auto;
+      z-index:-2;
+    }
+
+.slideshow-container img{
+    width:100%;
+    height:500px;
+}
+
+    .mySlides {
+        display: none;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor:pointer;
+      height: 13px;
+      width: 13px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+   /* --> *FADE ANIMATION* <-- */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+/* --> *C-A-R* <-- */
+
+.sectionedi{
+        margin-top: 70px;
+        background-color: yellow;
+
+    }
+
+/* --> *SESSÃO PRODUTOS PRINCIPAI* <-- */
+    
+
+    .imgQ{
+        width:150px;
+        height:150px;
+        margin-top: 50px; 
+    }
+
+    .SectionQ{
+        min-height:800px;
+        height:auto;
+
+        width:100%;
+        
+
+    }
+        .section_info {
+            padding: 60px 60px;
+        }
+    /* Efeito imagem */
+
+    .hoverzoom {
+        position: relative;
+        width: 200px;
+        overflow: hidden;
+        float:left;
+        margin-left: 80px;
+        margin-top:50px;
+    }
+    .hoverzoom > img {
+       width: 100%; 
+        border-radius: 0px;
+        -webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+            -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+             -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+              -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+                 transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    }
+    .hoverzoom:hover > img {
+        -webkit-transform: scale(1.5);
+           -moz-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+             -o-transform: scale(1.5);
+                transform: scale(1.5);
+    }
+    .hoverzoom .retina{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right:10px;
+        opacity: 0;    
+        background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);    
+        border-radius: 2px;
+        text-align: center;
+        padding-top: 100px;
+
+        -webkit-transition:	 all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+            -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+             -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+              -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+                 transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000); 
+    }
+    .hoverzoom:hover .retina {
+        opacity: 1;
+        box-shadow: inset 0 0 100px 50px rgba(0,0,0,.5);
+
+    }
+    .hoverzoom .retina p {
+        color: #fff;
+    }
+    .hoverzoom .retina a {
+        display: block;
+        width: 150px;
+        background: #6fc5e9;
+        border: 1px solid #59afd4;
+        border-radius: 4px;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        padding: 10px 15px;
+        margin: 16px auto 0;
+    }
+
+    .hoverzoom .retina p{
+      margin-left: 30px;
+
+    }
+
+/* --> *FOOTER* <-- */
+
+footer {
+	background-color: black;
+	padding: 20px 0;
+	text-align: center;
+	color: #fff;
+    height: 50px;
+    position:relative;
+}
+
+footer p{
+   text-align:center !important;
+}
+@media screen and (min-width: 
+1024px) {
+ #main { min-width: 1000px; }
+}
+
+@media screen and (max-width:)
+
+
+/**/
+nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+.nav-collapse li {
+  width: 100%;
+  display: block;
+}
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+.disable-pointer-events {
+  pointer-events: none !important;
+}
+
+.nav-toggle {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+@media screen and (min-width: 40em) {
+  .js .nav-collapse {
+    position: relative;
+  }
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+}
+/*FORM CADASTRO/////////////////////*/
+input[type=text],[type=email] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	border:1px solid #ccffcc; 
+	height:40px;
+	
+}
+
+
+input[type=submit] {
+    width:20%;
+    background-color:black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	font-family:arial;
+	font-size:14px;
+	border:1px solid #ccffcc; 
+	font-size:18px;
+	transition:all.8s;
+}
+input[type=reset] {
+    width:20%;
+    background-color:black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	font-family:arial;
+	font-size:14px;
+	border:1px solid #ccffcc; 
+	font-size:18px;
+	transition:all.8s;
+}
+
+input[type=submit]:hover {
+    background-color: #336600;
+}
+input[type=reset]:hover {
+    background-color: #336600;
+}
+h1{
+	font-family:arial;
+	color:black;
+	text-align:center;
+	margin-top:10px;
+}
+#nome{
+	font-family:arial;
+	color:black;
+	padding-left: 10px;
+	font-size:18px;
+}
+#form-cadastro{
+		margin:0 auto; 
+		height:750px;
+		width:900px; 
+		background:#99ff99; 
+		position:relative; 
+		top:auto; 
+		border:1px solid black; 
+		padding-left: 10px;
+		
+}
+#form-contato{
+		margin:0 auto; 
+		height:750px;
+		width:900px; 
+		background:#99ff99; 
+		position:relative; 
+		top:auto; 
+		border:1px solid black; 
+		padding-left: 10px;
+		
+}
+
+
+.sectionform{
+	height:950px;
+	background-image:url(fundo.png);
+}
+
+.sectionsobre{
+	height:550px;
+	background-image:url(fundo.png);
+}
+
+/* PAGINA LOGIN*/
+.msge{
+    color: #ff0000;
+}
+
+/*QUEM SOMOS*/
+#quem-somos{
+	margin-left:250px;
+}
+.demo-1 {
+    position:relative;
+    width:800px; 
+   height:450px;
+    overflow:hidden;
+    float:left;
+    margin-right:20px;
+    background-color:white;
+}
+.demo-1 p,.demo-1 h2 {
+    color:#000000;
+    padding:10px;
+    left:-20px;
+    top:20px;
+    position:relative;
+	
+}
+.demo-1 p {
+    font-family:arial;
+    font-size:16px;
+    line-height:18px;
+    margin:0
+}
+.demo-1 h2 {
+	font-family:arial;
+    font-size:20px;
+    line-height:24px;
+    margin:0;
+}
+.effect img {
+    position:absolute;
+    margin:-15px 0;
+    right:0;
+    top:0;
+    cursor:pointer;
+    -webkit-transition:top .4s ease-in-out,right .4s ease-in-out;
+    -moz-transition:top .4s ease-in-out,right .4s ease-in-out;
+    -o-transition:top .4s ease-in-out,right .4s ease-in-out;
+    transition:top .4s ease-in-out,right .4s ease-in-out;
+	width:900px;
+	height:420px;
+	
+}
+.effect img.top:hover {
+    top:-410px;
+    right:-330px;
+    padding-bottom:200px;
+    padding-left:300px
+}
+
+
+	
+
